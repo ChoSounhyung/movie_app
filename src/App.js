@@ -12,7 +12,7 @@ function App() {
       <Navigation /> {/* router 밖에서는 Link를 사용할 수 없음 */}
       <Route path="/" exact={true} component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/movie-detail" component={Detail} />
+      <Route path="/movie/:id" component={Detail} /> {/* :id -> 변수 */}
     </HashRouter>
   );
 }
